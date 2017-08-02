@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+ <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+</head>
+<body>
+
+<a-scene>
+
+  <a-cube position="-2 1 -2" rotation="0 45 0" color="#C00">
+    <a-mouseenter color="#CAA"></a-mouseenter><!--カーソル on-->
+    <a-mouseleave color="#C00"></a-mouseleave><!--カーソル off-->
+  </a-cube><!-- //立方体 -->
+  <a-sphere position="0 -0.5 -3" color="#0C0">
+    <a-mouseenter color="#CAA"></a-mouseenter><!--カーソル on-->
+    <a-mouseleave color="#0C0"></a-mouseleave><!--カーソル off-->
+  </a-sphere><!-- //円 -->
+
+  <!-- アニメーション設定 -->
+  <a-cylinder position="2 0 0" color="#00C"><!-- //円柱 -->
+    <a-mouseenter color="#CAA"></a-mouseenter><!--カーソル on-->
+    <a-mouseleave color="#00C"></a-mouseleave><!--カーソル off-->
+  </a-cylinder>
+
+  <!-- 視点設定 -->
+  <a-camera position="0 1.8 4"
+   cursor-visible="true"
+   cursor-scale="5"
+   cursor-color="#4CC3D9"
+   cursor-offset="5"
+   cursor-maxdistance="100"
+   cursor-opacity="0.5">
+  </a-camera>
+
+ <!-- 視点設定
+   position:視点の座標
+   visible:視点の表示・非表示
+   scale：視点の大きさ
+   color：視点の色
+   maxdistance：視点の最大距離（アニメーションが反応する距離）
+   opacity：視点の透度
+ -->
+
+ </a-scene>
+
+</body>
+</html>
